@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    margin-left: 450px ;
+    margin-right: 450px;
+    background: linear-gradient(120deg, #2a80b9, #0e9370);
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#attachments {
+    margin-top: 10px;
+}
+
+#attachments input {
+    margin-bottom: 5px;
+}
+
+#schedule {
+    margin-top: 10px;
+}
+
+#sendButton {
+    padding: 10px;
+    background-color: #0a68e3; 
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #3027dc;
+}
+
+

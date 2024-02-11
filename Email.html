@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Composer</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+    
+
+<body>
+
+    <h2>Email Composer</h2>
+
+    <form id="emailForm">
+        
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required>
+
+        <label for="cc">Cc:</label>
+        <input type="text" id="cc" name="cc">
+
+        <label for="bcc">Bcc:</label>
+        <input type="text" id="bcc" name="bcc">
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="8" required></textarea>
+
+        <div id="attachments">
+            <label for="file">Attach Files:</label>
+            <input type="file" id="file" name="file" multiple>
+        </div>
+
+        <div id="schedule">
+            <label for="scheduleSend">Schedule Send:</label>
+            <input type="datetime-local" id="scheduleSend" name="scheduleSend">
+        </div>
+
+        <button type="button" id="sendButton">Send Email</button>
+    </form>
+
+    <script>
+        document.getElementById("sendButton").addEventListener("click", function() {
+            // You can add logic here to handle the form data and schedule send if needed
+            alert("Email sent!");
+        });
+    </script>
+
+</body>
+</html>
